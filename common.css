@@ -2,11 +2,12 @@ html,body {
     height: 100%;
 }
 #back {
-width:320px;
-height: 569px;
+width:360px;
+height: 640px;
 background-image: url("./1.png");
-background-size: 100%;
-
+background-size: 100% 100%;
+ background-repeat: no-repeat;
+  background-position : center;
 }
 * {
   margin: 0px;
