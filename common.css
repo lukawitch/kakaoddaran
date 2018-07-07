@@ -1,0 +1,19 @@
+html,body {
+    height: 100%;
+}
+#back {
+width:320px;
+height: 569px;
+background-image: url("./1.png");
+background-size: 100%;
+
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+#backimage{
+    vertical-align:top;
+    max-width: 100%;
+    max-height: auto;
+}
