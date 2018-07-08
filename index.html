@@ -6,10 +6,81 @@
   <script src="./jquery.min.js"></script>
 <link rel="stylesheet" href="./common.css" type="text/css">
   <script src="./common.js"></script>
+  <style>
+#test{
+    width: 100%;
+    height: 40%;
+
+      display:table;
+}
+#test2{
+    width: 50%;
+    height: 30%;
+
+    float: left;
+
+}
+
+#test4{
+    width: 50%;
+    height: 30%;
+
+    float: right;
+     display: inline-block;
+}
+
+#image{
+
+  width: 100%;
+  height: auto;
+  display:block;
+  margin:0 auto;
+
+}
+#test6{
+  display:table-cell;
+  vertical-align:middle;
+}
+#circleimage{
+
+    max-width: 100%;
+    max-height: auto;
+    display:block;
+    margin:auto;
+}
+  </style>
  </HEAD>
  <body>
-   <div  id="back" >
+   <div  id="back"  >
   <!--<img src="./1.png" id="backimage"/>-->
+    <div id="test">
+      <div id="test6">
+ <img src="./3.png" id="image" />
+
+ </div>
+    </div>
+
+    <div id="test2">
+      <div id="test6">
+      <img src="./2.png"id="circleimage"/>
+  </div>
+
+    </div>
+    <div id="test2">
+            <div id="test6">
+            <img src="./2.png" id="circleimage"/>
+              </div>
+    </div>
+    <div id="test4">
+            <div id="test6">
+            <img src="./2.png" id="circleimage"/>
+              </div>
+    </div>
+    <div id="test4">
+            <div id="test6">
+            <img src="./2.png" id="circleimage"/>
+          </div>
+    </div>
    </div>
 
  </body>

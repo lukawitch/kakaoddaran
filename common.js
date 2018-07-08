@@ -1,4 +1,4 @@
-if (matchMedia("screen and (min-width: 1024px)").matches) {
+if (window.outerWidth>window.outerHeight) {
 
   $(function(){
     $('#back').css('margin','auto');
