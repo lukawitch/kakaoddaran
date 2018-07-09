@@ -1,6 +1,8 @@
 html,body {
     height: 100%;
-}/*높이지정*/
+    margin: 0px;
+    padding: 0px;
+}
 #back {
 width:360px;
 height: 640px;
@@ -8,10 +10,8 @@ background-image: url("../img/1.png");
 background-size: 100% 100%;
  background-repeat: no-repeat;
 background-position : center;
-}//*배경이미지*/
+}/
 * {
   margin: 0px;
   padding: 0px;
 }
-/*모든요소들은 기본적으로 margin값과 padding값을 0으로 맞춥니다
-html,body도 마찬가지로 적용됩니다.*/
