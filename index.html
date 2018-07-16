@@ -18,30 +18,28 @@
   <img src="./img/3.png" id="Tableware" />
 </div>
 <div id="dishpos" name="dish"><!--맞출거 출력하는것 -->
- <img src="./img/one.png"id="Tableware"/>
+ <img src="./img/dessert/one.png"id="Tableware"/>
 </div>
-<div id="numpos" name="number"><!--숫자 출력하는것5,4,3,2,1 부분 -->
- <img src="./img/num_five.png"id="Tableware"/>
-</div>
+  <script src="./js/timer.js"></script>
 <div id="Tablewarepos" name="spoon"><!--숟가락 출력 -->
  <img src='./img/3.png' id="Tableware" />
 </div>
 </div>
 <!-- 보기부분 CSS중복에 이미지만 달라서 js로 짰어요
 물론 imagename에 들어갈부분을 이제 랜덤으로 돌릴일만남았어요!-->
-<script>
-var dishes;
-var div
-for (var i = 0; i < imagename.length; i++) {
-dishes = "<img src='./img/"+imagename[i]+".png' id='choiceimage' />";
+  <script >
+  var dishes;
+  var div
+  for (var i = 0; i < imagename.length; i++) {
+  dishes = "<img src='./img/dessert/"+imagename[i]+".png' id='choiceimage' />";
 
- div= parent.document.createElement("div");
-div.id = "choicepos";
-div.innerHTML = dishes;
-parent.document.getElementById("back").appendChild(div);
-}
+   div= parent.document.createElement("div");
+  div.id = "choicepos";
+  div.innerHTML = dishes;
+  parent.document.getElementById("back").appendChild(div);
+  }
 
-</script>
+  </script>
 </div>
  </body>
 

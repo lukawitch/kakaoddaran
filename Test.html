@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+.chart{
+  float: left;
+  position: relative;
+  margin: 20px;
+  width: 240px;
+  height: 240px;
+}
+.circle-mask-outer,
+.circle-mask-inner{
+  overflow: hidden;
+  position: absolute;
+  width: 120px;
+  height: 240px;
+}
+.circle-mask-outer.left{
+  left:0;
+}
+.circle-mask-outer.right{
+  right:0;
+}
+.circle-mask-inner{
+  transform: rotate(0);
+}
+.circle-mask-outer.left,
+.circle-mask-inner{
+transform-origin: 0 50%;
+}
+.circle-mask-outer.right,
+.circle-mask-inner{
+  transform-origin: 100% 50%;
+}
+
+.circle-body{
+  border-radius: 50%;
+  position: absolute;
+  width: 240px;
+  height: 240px;
+}
+.circle-mask-outer.left,.circle-body{
+  right: 0;
+}
+
+.circle-mask-outer.right,.circle-body{
+  left: 0;
+}
+#test.circle-body{
+  background-color: #0078ff;
+}
+.box{
+  transform: :rotate(120deg);
+}
+</style>
+<script>
+  $function(){
+    activiteScene2();
+
+    function activiteScene2(){
+      var $content = $('#scene-2-content'),
+      $charts = $content.find('.chart');
+      $content.stop(true).animate({
+        right:0
+      },1200,'easeInOutQuint');
+
+      $charts.each(function(){
+        var chart = $(this),
+        $circleLeft = $chart.find('.left .circle-mask-inner').css({transform:'rotate(0)'}),
+        $circleRight = $chart.find('.right .circle-mask-inner').css({transform:'rotate(0)'}),
+
+        $percentNumber = $chart.find('.percent-number'),
+        
+      })
+    }
+  }
+</script>
+</head>
+
+<body style="background-color:pink">
+  <div id="dddd">
+
+  </div>
+  <script>
+  var num=1;
+  var image=new Array('num_five','num_four','num_three','num_two','num_one');
+  var test;
+  var real;
+  var aaa;
+  real="<img src='./img/"+image[0]+".png' id='choiceimage' />";
+  aaa= parent.document.createElement("div");
+aaa.innerHTML = real;
+    aaa.id="umm2";
+ parent.document.getElementById("dddd").appendChild(aaa);
+  var TEST=setInterval(function test(){
+   aaa.id="umm";
+    real="<img src='./img/"+image[num]+".png' id='choiceimage' />";
+    aaa= parent.document.createElement("div");
+
+       aaa.id="umm2";
+   aaa.innerHTML = real;
+   parent.document.getElementById("dddd").appendChild(aaa);
+
+     num++;
+
+    if(num==3){
+      clearInterval(TEST);
+    }
+  },1000);
+
+
+  </script>
+</body>
+</html>
