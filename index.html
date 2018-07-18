@@ -4,43 +4,54 @@
    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
   <TITLE> DesertKaKao </TITLE>
   <script src="./js/jquery.min.js"></script>
-<link rel="stylesheet" href="./css/common.css" type="text/css">
-<link rel="stylesheet" href="./css/game.css" type="text/css">
   <script src="./js/common.js"></script>
-  <script src="./js/absolute.js"></script>
-  <script src="./js/game.js"></script>
+  <link rel="stylesheet" href="./css/common.css" type="text/css">
+<style>
+#ddd{
+width:100px;
+height:100px;
+}
+#eeee{
+width:60%;
+height:30%;
+display:inline-block;
+  margin-top: 5%;
 
- </HEAD>
- <body>
-   <div  id="back"  >
-    <div id="top">
-<div id="Tablewarepos" name="fork"><!--fork 출력하는것 -->
-  <img src="./img/3.png" id="Tableware" />
-</div>
-<div id="dishpos" name="dish"><!--맞출거 출력하는것 -->
- <img src="./img/dessert/one.png"id="Tableware"/>
-</div>
-  <script src="./js/timer.js"></script>
-<div id="Tablewarepos" name="spoon"><!--숟가락 출력 -->
- <img src='./img/3.png' id="Tableware" />
-</div>
-</div>
-<!-- 보기부분 CSS중복에 이미지만 달라서 js로 짰어요
-물론 imagename에 들어갈부분을 이제 랜덤으로 돌릴일만남았어요!-->
-  <script >
-  var dishes;
-  var div
-  for (var i = 0; i < imagename.length; i++) {
-  dishes = "<img src='./img/dessert/"+imagename[i]+".png' id='choiceimage' />";
+}
+#ffff{
+width:20%;
+height:30%;
+ float: left;
+}
+#gggg{
+width:20%;
+height:30%;
+ float: right;
+}
+#imgg{
+  max-height: 100%;
+  max-width:100%;
+    display:block;
+    margin:auto;
+}
+</style>
 
-   div= parent.document.createElement("div");
-  div.id = "choicepos";
-  div.innerHTML = dishes;
-  parent.document.getElementById("back").appendChild(div);
-  }
+<body>
+ <div id="bg1">
+ <div id="ffff">
+    <img src="./img/Question.png" id="imgg"/>
+ </div>
+ <div id="eeee">
+    <img src="./img/logo.png" id="imgg"/>
+ </div>
+  <div id="gggg">
+    <img src="./img/sound.png" id="imgg"/>
+ </div>
+ </div>
 
-  </script>
-</div>
+
+
+
  </body>
 
 </HTML>
