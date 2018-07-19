@@ -5,8 +5,6 @@ var Time;
 var png;
 var set;
 
-
-function Timer(){
 png="<img src='./img/"+ num_image[0]+".png' id='timeimage' />";
 set= parent.document.createElement("div");
  set.id="numpos";
@@ -32,5 +30,4 @@ parent.document.getElementById("top").appendChild(set);
       clearInterval(TEST);
       $('#numpos').css('height',window.outerHeight*0.3);
     }
-  },1000);}
-
+  },1000);

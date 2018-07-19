@@ -15,7 +15,7 @@
    <div  id="back"  >
     <div id="top">
   <script src="./js/dishchange.js"></script>
-  <script src="./js/timer.js"></script>
+
 
 
 </div>
@@ -24,8 +24,11 @@
   <script >
   var dishes;
   var div
-  for (var i = 0; i < imagename.length; i++) {
-  dishes = "<img src='./img/dessert/"+imagename[i]+".png' id='choiceimage' />";
+
+
+  for (var i = 0; i < 4; i++) {
+
+  dishes = "<img src='./img/dessert/"+imagename[nrandum[i]]+".png' id='choiceimage' />";
 
    div= parent.document.createElement("div");
   div.id = "choicepos";

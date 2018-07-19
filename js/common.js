@@ -1,17 +1,48 @@
-if (window.outerWidth>window.outerHeight) {
-
-  $(function(){
-    $('#back').css('margin','auto');
-	 $('#bg1').css('margin','auto');
-  });
-}/*가로 길이가 길 때 back기본속성유지하고 margin:auto값만 줘서
-가운데정렬만합니다*/
-else{
- $(function(){
-   $('#back').css('width',window.outerWidth);
-   $('#back').css('height',window.outerHeight);
-    $('#bg1').css('width',window.outerWidth);
-   $('#bg1').css('height',window.outerHeight);
- });
+var wid=window.outerWidth;
+var hei=window.outerHeight;
+var widper;
+var heiper;
+var a=hei;
+var gdc=0;
+if(wid>hei){
+  a=wid;
 }
-/*그게아니라면  device의 가로세로길이를 가져와서 가로세로를 변경합니다*/
+for(var i=1 ;i<=a;i++){
+  if(wid%i==0&&hei%i==0){
+    gdc=i;
+  }
+}
+widper=wid/gdc;
+heiper=hei/gdc;
+
+if((widper/heiper)==(9/14)){
+  $(function(){
+  $('#back').css('width',window.outerWidth);
+  $('#back').css('height',window.outerHeight);
+   $('#bg1').css('width',window.outerWidth);
+  $('#bg1').css('height',window.outerHeight);
+  $('#back').css('margin','auto');
+  	 $('#bg1').css('margin','auto');
+});
+}
+else if((widper/heiper)>(9/14)){
+  $(function(){
+  $('#back').css('width',window.outerHeight*(9/14));
+  $('#back').css('height',window.outerHeight);
+   $('#bg1').css('width',window.outerHeight*(9/14));
+  $('#bg1').css('height',window.outerHeight);
+  $('#back').css('margin','auto');
+  	 $('#bg1').css('margin','auto');
+});
+
+}
+else{
+  $(function(){
+  $('#back').css('width',window.outerWidth);
+  $('#back').css('height',window.outerWidth*(14/9));
+   $('#bg1').css('width',window.outerWidth);
+  $('#bg1').css('height',window.outerWidth*(14/9));
+  $('#back').css('margin','auto');
+  	 $('#bg1').css('margin','auto');
+});
+}
