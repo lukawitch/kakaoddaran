@@ -8,19 +8,14 @@ var setting;
 dish="<img src='./img/dessert/"+  dish_image[0]+".png' id='Tableware' />";
 setting= parent.document.createElement("div");
  setting.id="dishpos";
+ $(function(){
+     $('#dishpos').css('height',window.outerHeight*0.3);
+ });
 setting.innerHTML = dish;
 parent.document.getElementById("top").appendChild(setting);
 
   var Changer=setInterval(function Change(){
-    setting.id="disappear";
-    dish ="<img src='./img/dessert/"+  dish_image[0]+".png' id='Tableware' />";
-     setting= parent.document.createElement("div");
-      setting.id="dishpos";
-     setting.innerHTML = dish;
-     $(function(){
-         $('#dishpos').css('height',window.outerHeight*0.3);
-     });
-     parent.document.getElementById("top").appendChild(setting);
+
      number++;
 
     if(number==3){

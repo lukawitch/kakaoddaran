@@ -25,7 +25,6 @@
   max-width:90%;
     display:block;
     margin:auto;
-    margin-top: 5%;
 }/*보기부분 이미지*/
 
 #timeimage{
@@ -44,7 +43,7 @@
  z-index: 3;
  left:50%;
  transform:translateX(-50%);
-top:5%
+top:4%
 }/*접시배치*/
 #numpos{
   width: 40%;
@@ -54,7 +53,7 @@ top:5%
  z-index: 5;
  left:50%;
  transform:translateX(-50%);
-top:5%
+top:4%
 }/*숫자배치
 접시랑 코드가 유사하지만 js로 요소만 추가안해준이유는
 absolute.js가 안먹혀서 입니당.*/
