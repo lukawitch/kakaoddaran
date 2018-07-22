@@ -30,19 +30,19 @@ height:100px;
 }
 #eeee{
 width:60%;
-height:30%;
+height:25%;
 display:inline-block;
 margin-top: 5%;
 
 }
 #ffff{
 width:20%;
-height:30%;
+height:25%;
  float: left;
 }
 #gggg{
 width:20%;
-height:30%;
+height:25%;
  float: right;
 }
 #imgg{
@@ -51,9 +51,15 @@ height:30%;
     display:block;
     margin:auto;
 }
+#imggg{
+  max-height: 100%;
+  max-width:44%;
+    display:block;
+    margin:auto;
+}
 #blank{
   width: 100%;
-  height:48%;
+  height:53%;
 }
 
 #bt{
